@@ -1,0 +1,115 @@
+/* Global layout */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* App container */
+.todo-wrapper {
+  width: 90%;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  margin-top: 60px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Input and Button */
+.create-task {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 16px;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #777;
+}
+
+.add-button {
+  padding: 12px 16px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-button:hover {
+  background-color: #ddd;
+}
+
+/* Task list */
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  background-color: #2a2a2a;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.05);
+}
+
+.status-icon {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.status-icon.checked {
+  background-color: #fff;
+}
+
+.task-text {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.line_through {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+
+
+.no-record {
+  text-align: center;
+  color: #aaa;
+}
